@@ -13,7 +13,7 @@ import cors from "cors";
 import { Request, Response } from "express";
 import dotenv from "dotenv";
 dotenv.config();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT;
 const HOST = '0.0.0.0'; // VERY IMPORTANT
 
 const app = express();
@@ -240,5 +240,5 @@ app.delete('/room/:id', middleware, async (req: Request, res: Response) => {
 
 
 app.listen(PORT, HOST, () => {
-  console.log(`Server running on http://${HOST}:${PORT}`);
+  console.log(`Server running on ${HOST}:${PORT}`);
 });
