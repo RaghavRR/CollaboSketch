@@ -1,16 +1,21 @@
-import { WebSocket, WebSocketServer } from "ws";
+import { WebSocket as WsWebSocket, WebSocketServer } from "ws";
+import http from "http";
 import jwt, { JwtPayload } from "jsonwebtoken";
 import { JWT_SECRET } from "@repo/backend-common/config";
 import { prismaClient } from "@repo/db/client";
-const PORT = process.env.WS_PORT || 8080;
 
-const wss = new WebSocketServer({ port: Number(PORT) });
+// Use Render-provided PORT
+const PORT = process.env.PORT || 8080;
+
+const server = http.createServer(); // Create HTTP server
+const wss = new WebSocketServer({ server });
 
 interface User {
-  ws: WebSocket;
+  ws: WsWebSocket;
   rooms: string[];
   userId: string;
 }
+
 
 const users: User[] = [];
 const rooms = new Map<string, Set<User>>();
@@ -99,7 +104,6 @@ wss.on("connection", function connection(ws, request) {
   });
 
   ws.on("close", () => {
-    // Clean up user from all rooms
     for (const roomId of user.rooms) {
       const roomUsers = rooms.get(roomId);
       if (roomUsers) {
@@ -110,8 +114,12 @@ wss.on("connection", function connection(ws, request) {
       }
     }
 
-    // Remove from user list
     const index = users.indexOf(user);
     if (index !== -1) users.splice(index, 1);
   });
+});
+
+// Start the HTTP server (Render requires this)
+server.listen(Number(PORT), '0.0.0.0', () => {
+  console.log(`WebSocket server running on ws://0.0.0.0:${PORT}`);
 });

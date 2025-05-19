@@ -13,7 +13,7 @@ import cors from "cors";
 import { Request, Response } from "express";
 import dotenv from "dotenv";
 dotenv.config();
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 3000;
 const HOST = '0.0.0.0'; // VERY IMPORTANT
 
 const app = express();

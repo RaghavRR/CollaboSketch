@@ -9,7 +9,7 @@ export function AuthPage({ isSignin }: { isSignin: boolean }) {
   const router = useRouter();
   const [form, setForm] = useState({ name: "", username: "", password: "" });
   const [error, setError] = useState("");
-  console.log("BASE_URL", BASE_URL);
+  // console.log("BASE_URL", BASE_URL);
 
 
   const handleSubmit = async () => {
