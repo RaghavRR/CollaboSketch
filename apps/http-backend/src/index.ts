@@ -239,6 +239,6 @@ app.delete('/room/:id', middleware, async (req: Request, res: Response) => {
 });
 
 
-app.listen(PORT, host,() => {
-  console.log(`Server running on port ${PORT}`);
+app.listen(PORT, host, () => {
+  console.log(`Server running on http://${host}:${PORT}`);
 });
