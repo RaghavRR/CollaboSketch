@@ -1,7 +1,7 @@
 {
-  "buildCommand": "pnpm turbo run build --filter=sketch.io-frontend...",
+  "buildCommand": "pnpm build",
   "installCommand": "pnpm install",
-  "outputDirectory": ".next",
+  "outputDirectory": "dist",
   "framework": "nextjs",
   "env": {
     "NODE_VERSION": "18.18.2"

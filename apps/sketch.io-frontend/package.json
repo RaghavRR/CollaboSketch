@@ -37,8 +37,8 @@
   "turbo": {
     "outputs": [".next/**", "out/**", "dist/**"]
   },
-  "engines": {
+"engines": {
   "node": ">=18",
-  "pnpm": ">=8"
+  "pnpm": "8.15.4"
 }
 }
