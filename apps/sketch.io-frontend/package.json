@@ -38,7 +38,6 @@
     "outputs": [".next/**", "out/**", "dist/**"]
   },
 "engines": {
-  "node": ">=18",
-  "pnpm": "9.0.0"
+  "node": ">=18"
 }
 }
