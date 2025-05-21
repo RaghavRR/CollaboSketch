@@ -4,19 +4,19 @@ import TestimonialCard from './testimonialCard';
 const Testimonials = () => {
   const testimonials = [
     {
-      content: "Sketch.io has completely transformed how our design team collaborates. The real-time editing and infinite canvas are game-changers for our brainstorming sessions.",
+      content: "CollaboSketch has completely transformed how our design team collaborates. The real-time editing and infinite canvas are game-changers for our brainstorming sessions.",
       author: "Sophia Chen",
       role: "Product Designer at Droplet",
       avatar: "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=100"
     },
     {
-      content: "As a remote team, we needed a tool that would help us visualize concepts together. Sketch.io's collaborative features feel just like being in the same room with your team.",
+      content: "As a remote team, we needed a tool that would help us visualize concepts together. CollaboSketch's collaborative features feel just like being in the same room with your team.",
       author: "Marcus Johnson",
       role: "Engineering Lead at Visionary",
       avatar: "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=100"
     },
     {
-      content: "The hand-drawn style of Sketch.io gives our presentations a personal touch that our clients love. It's become our go-to tool for client meetings and proposals.",
+      content: "The hand-drawn style of CollaboSketch gives our presentations a personal touch that our clients love. It's become our go-to tool for client meetings and proposals.",
       author: "Olivia Martinez",
       role: "Creative Director at Artisan",
       avatar: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=100"

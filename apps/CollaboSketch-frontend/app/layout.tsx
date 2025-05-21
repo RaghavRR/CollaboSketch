@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Sketch.io",
-  description: "Collaborative drawing powered by Sketch.io",
+  title: "CollaboSketch",
+  description: "Collaborative drawing powered by CollaboSketch",
   icons: {
     icon: "/favicon.ico", // ✅ Make sure favicon.ico is in the /public folder
   },

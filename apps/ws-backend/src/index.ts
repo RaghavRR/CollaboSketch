@@ -96,7 +96,7 @@ wss.on("connection", function connection(ws, request) {
       });
 
       for (const u of recipients) {
-        if (u.ws !== ws && u.ws.readyState === WebSocket.OPEN) {
+        if (u.ws !== ws && u.ws.readyState === WsWebSocket.OPEN) {
           u.ws.send(msg);
         }
       }

@@ -79,7 +79,7 @@ importers:
         specifier: ^5.8.3
         version: 5.8.3
 
-  apps/sketch.io-frontend:
+  apps/CollaboSketch-frontend:
     dependencies:
       '@repo/db':
         specifier: workspace:*

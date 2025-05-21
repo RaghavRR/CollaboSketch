@@ -12,10 +12,10 @@ const Footer = () => {
           <div className="md:col-span-2">
             <div className="flex items-center space-x-3 mb-4">
               <Pencil className="h-6 w-6 text-purple-400" />
-              <span className="text-2xl font-bold text-white">Sketch.io</span>
+              <span className="text-2xl font-bold text-white">CollaboSketch</span>
             </div>
             <p className="text-gray-400 mb-6 max-w-md leading-relaxed">
-              Reimagine your whiteboard experience with our intuitive, collaborative sketching tool. 
+              Reimagine your whiteboard experience with our intuitive, collaborative CollaboSketch ing tool. 
               Create beautiful diagrams that look hand-drawn and feel natural.
             </p>
             <div className="flex space-x-4">
@@ -72,7 +72,7 @@ const Footer = () => {
 
         {/* Bottom footer */}
         <div className="mt-12 pt-8 border-t border-gray-800 text-sm text-gray-500 flex flex-col md:flex-row justify-between items-center">
-          <p>© {new Date().getFullYear()} Sketch.io. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} CollaboSketch. All rights reserved.</p>
           <div className="mt-4 md:mt-0 flex space-x-6">
             <a href="#" className="hover:text-gray-300 transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-gray-300 transition-colors">Terms of Service</a>

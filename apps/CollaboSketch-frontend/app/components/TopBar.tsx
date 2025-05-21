@@ -38,7 +38,7 @@ export function TopBar({ icons, roomName }: TopBarProps) {
               <Pencil className="h-5 w-5 sm:h-6 sm:w-6 text-purple-600" />
             </div>
             <span className="text-xl sm:text-2xl font-bold tracking-tight bg-gradient-to-r from-purple-600 to-teal-500 text-transparent bg-clip-text select-none">
-              Sketch.io
+              CollaboSketch
             </span>
           </div>
 

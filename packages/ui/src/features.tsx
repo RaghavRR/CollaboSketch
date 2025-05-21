@@ -7,7 +7,7 @@ const Features = () => {
     {
       icon: <PaintBrush className="h-6 w-6 text-purple-600" />,
       title: 'Beautiful Hand-Drawn Style',
-      description: 'Create sketches that look like they were drawn with a real pen on paper.'
+      description: 'Create CollaboSketch es that look like they were drawn with a real pen on paper.'
     },
     {
       icon: <Users className="h-6 w-6 text-purple-600" />,

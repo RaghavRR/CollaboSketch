@@ -48,7 +48,7 @@ const Hero = () => {
               </div>
               <div className="ml-4">
                 <p className="text-sm text-gray-600">
-                  <span className="font-semibold">5,000+</span> people are already using Sketch.io
+                  <span className="font-semibold">5,000+</span> people are already using CollaboSketch
                 </p>
               </div>
             </div>

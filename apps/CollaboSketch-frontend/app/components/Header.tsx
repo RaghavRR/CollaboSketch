@@ -20,7 +20,7 @@ export const Header = ({
         <Pencil className="h-6 w-6 text-purple-600" />
       </div>
       <span className="text-2xl font-bold tracking-tight bg-gradient-to-r from-purple-600 to-teal-500 text-transparent bg-clip-text">
-        Sketch.io
+        CollaboSketch
       </span>
     </div>
 

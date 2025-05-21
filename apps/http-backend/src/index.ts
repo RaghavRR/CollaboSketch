@@ -14,7 +14,6 @@ import { Request, Response } from "express";
 import dotenv from "dotenv";
 dotenv.config();
 const PORT = process.env.PORT || 3000;
-const HOST = '0.0.0.0'; // VERY IMPORTANT
 
 const app = express();
 app.use(express.json());
@@ -239,6 +238,6 @@ app.delete('/room/:id', middleware, async (req: Request, res: Response) => {
 });
 
 
-app.listen(PORT, HOST, () => {
-  console.log(`Server running on ${HOST}:${PORT}`);
+app.listen(PORT, () => {
+  console.log(`Server running on:${PORT}`);
 });
